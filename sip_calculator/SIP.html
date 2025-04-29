@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <a href="convert.html"><input type="button" id="abcd" value="Money Conversion"></a>
+<h1>Saving Investment Plan(SIP) Calculator</h1>
+<div class="form-container">
+    <h2>Enter Investment Details</h2><br>
+    <form id="sip-form" action="#">
+        <input name="initialInvestment" id="initialInvestment" min="0" type="number" placeholder="Initial Investment"
+               required><br><br>
+        <input name="monthlyInvestment" id="monthlyInvestment" min="0" type="number" placeholder="Monthly Investment"
+               required><br><br><label> Investment type </label><br>
+        <select name="investmentType" id="investmentType" required>
+            <option value="">Select an option</option>
+            <option value="Basic">Basic Savings Plan</option>
+            <option value="Saving">Savings Plan Plus</option>
+            <option value="MSI">Managed Stock Investments</option>
+        </select><br><br> <label> Duration </label><br>
+        <select name="duration" id="duration" required>
+            <option value="">Select an option</option>
+            <option value="1">1 Year</option>
+            <option value="5">5 Years</option>
+            <option value="10">10 Years</option>
+        </select><br>
+        <button type="submit" id="submit-form">Get Detail</button>
+        <button type="reset" id="reset-form">Reset Form</button>
+    </form>
+</div>
+<div id="quote-container" class="hidden">
+    <h2>Investment Quote</h2>
+    <div id="quote-results"></div>
+</div> <br> <br><br>
+<button  id="demo" onclick="myFunction()">Get Graph</button>
+<h1> Chart </h1>
+<div class="abc">
+<canvas id="cookiechart" width="50" height="50"></canvas></div>
+<script src="script.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.7.0.min.js"
+  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+  crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SDLC</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="/currency.png"/>
+</head>
+<body>
+  <a href="SIP.html"><input id="abc" type="button" value="SIP Calculator" /></a>
+  <div class="header">Money Conversion System</div>
+  <form>
+    <i style color="red">Note : Enter Amount between 300 to 5000</i><br><br>
+    Enter Amount:
+    <input id="amount" type="number"  placeholder="Enter amount" /> <br><br>
+    Select Conversion From:
+    <select id="primary" class="input"></select><br><br>
+    Select Conversion To:
+    <select id="secondary" class="input"></select> <br><br>
+    <h3 class="header1">Fee Rate</h3>
+  <table>
+    <tr>
+    <th> Amount</th>
+    <th> Rate </th>
+  </tr>
+  <tr> 
+    <td> Upto 500 </td>
+    <td> 3.5% </td>
+    </tr>
+      <tr>
+        <td> Over 500 </td>
+        <td> 2.7% </td>
+      </tr>
+      <tr>
+        <td> Over 1500 </td>
+        <td> 2.0% </td>
+        </tr>
+        <tr>
+          <td> Over 2500 </td>
+          <td> 1.5% </td>
+        </tr>
+      </table><br><br>
+    <div class="btn-calculate">
+    <input id="btn-convert" type="button" value="Convert" /><br><br>
+    <input id="btn-convert" type="button" value="Reset" onclick="clearVal()" />
+  </div>
+  </form>
+  <p id="result" style="display:none;">
+    Conversion: 
+    <span id="txt-primary"></span>
+    <span id="txt-secondary"></span>
+  </p>
+  <script src="myscript.js"></script>
+</body>
+</html>

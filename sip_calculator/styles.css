@@ -1,0 +1,73 @@
+.abc{
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  background: #27272c;
+  color: white;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 5px;
+}
+
+button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+#abcd{
+    height: 35px;
+    margin-right: 60%;
+    border-radius: 10px;
+    border: 2px solid #007bff;
+    background-color: #007bff;
+    border-color: #007bff;
+    font-size: 15px;
+    width: 150px;
+    cursor: pointer;
+    color: white;
+}
+
+#quote-container {
+    margin-top: 20px;
+}
+
+div.result {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    padding: 5px;
+}
+
+div.result-label {
+    min-width: 200px;
+    font-weight: bold;
+}
